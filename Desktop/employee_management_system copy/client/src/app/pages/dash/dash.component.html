@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="display-4 text-muted">Welcome</div>
+</div>
+<div class="row mt-5">
+    <div class="col-md-4">
+
+        <app-status name="All" [employees]="employeeService.getAllEmployees()"></app-status>
+    </div>
+    <div class="col-md-4">
+        <app-status name="MALE" [employees]="employeeService.getMaleEmployees()"></app-status>
+    </div>
+    <div class="col-md-4">
+        <app-status name="FEMALE" [employees]="employeeService.getFemaleEmployees()"></app-status>
+    </div>
+
+
+</div>
+
+<app-add-employee></app-add-employee>
